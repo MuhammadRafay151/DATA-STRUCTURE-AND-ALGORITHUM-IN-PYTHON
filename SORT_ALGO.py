@@ -35,5 +35,19 @@ class Sort:
      for i in range(data.__len__()):
          print(data[i])
 
+ def bubble_Sort(self,data=[]):
+    check=bool(False)
+    for i  in range(data.__len__()):
+        check=False
+        for j in range(data.__len__()-1):
+            if(data[j]>data[j+1]):
+                temp=data[j]
+                data[j]=data[j+1]
+                data[j+1]=temp
+                check=True
+        if check==False:
+            break
+
+
 
 
